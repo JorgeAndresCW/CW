@@ -1,6 +1,6 @@
 import tweepy
 # We import our access keys:
-from Credentials import *
+from Credentials2 import *
 
 def twitter_setup():
     """
@@ -26,7 +26,6 @@ def collect():
         print(tweet.created_at)
     print(len(tweets))
 
-collect()
 def collect_by_user(user_id):
     connexion = twitter_setup()
     statuses = connexion.user_timeline(id = user_id, count = 30)
@@ -35,7 +34,7 @@ def collect_by_user(user_id):
         print(status.id)
     print(len(statuses))
     return statuses
-collect_by_user("AlexandreDubou3")
+
 
 from tweepy.streaming import StreamListener
 class StdOutListener(StreamListener):
@@ -60,6 +59,8 @@ def collect_by_streaming():
     connexion = twitter_setup()
     listener = StdOutListener()
     stream=tweepy.Stream(auth = connexion.auth, listener=listener)
-    stream.filter(track=['Cristiano Ronaldo'])
+    stream.filter(follow=["25073877"])
+   # stream.replies=all (deprecated
 
 
+collect_by_streaming()

@@ -12,7 +12,7 @@
     <session id="1409265690">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.43" value="1" />
           <entry key="project.opened" value="2" />
@@ -20,36 +20,45 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="8" />
+          <entry key="py" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="8" />
+          <entry key="Python" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="71" />
           <entry key="dummy" value="1" />
-          <entry key="py" value="2918" />
+          <entry key="py" value="4517" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="2989" />
+          <entry key="Python" value="4588" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TwitterPredictor/Credentials.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state>
+              <caret lean-forward="true" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TwitterPredictor/Credentials2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -57,8 +66,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TwitterPredictor/HelloWorld.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-271">
-              <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+            <state relative-caret-position="222">
+              <caret line="62" column="35" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="35" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -69,7 +78,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/twitter_collect/tweet_collect_whole.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
+            <state relative-caret-position="-84">
               <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
             </state>
           </provider>
@@ -84,13 +93,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/twitter_collect/collect_candidate_actuality_tweets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+            <state relative-caret-position="200">
+              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
               <folding>
-                <marker date="1542208655478" expanded="true" signature="68:73" ph="..." />
+                <marker date="1542279300383" expanded="true" signature="472:477" ph="..." />
+                <marker date="1542279300383" expanded="true" signature="1027:1028" ph="..." />
+                <marker date="1542279300383" expanded="true" signature="1027:1029" ph="..." />
               </folding>
             </state>
           </provider>
@@ -123,21 +134,27 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>retweeted</find>
+    </findStrings>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/TwitterPredictor/Credentials.py" />
         <option value="$PROJECT_DIR$/twitter_collect/twitter_connection_setup.py" />
         <option value="$PROJECT_DIR$/TwitterPredictor/Hello World.py" />
-        <option value="$PROJECT_DIR$/twitter_collect/collect_candidate_actuality_tweets.py" />
         <option value="$PROJECT_DIR$/twitter_collect/collect_candidate_tweet_activity.py" />
-        <option value="$PROJECT_DIR$/TwitterPredictor/HelloWorld.py" />
         <option value="$PROJECT_DIR$/TwitterPredictor/test.py" />
         <option value="$PROJECT_DIR$/twitter_collect/tweet_collect_whole.py" />
+        <option value="$PROJECT_DIR$/TwitterPredictor/Credentials2.py" />
+        <option value="$PROJECT_DIR$/TwitterPredictor/HelloWorld.py" />
+        <option value="$PROJECT_DIR$/twitter_collect/collect_candidate_actuality_tweets.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="530" />
     <option name="width" value="684" />
     <option name="height" value="735" />
@@ -177,7 +194,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/CW/TwitterAnalysis/TPredictorDef/TwitterPredictor/HelloWorld.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -192,8 +209,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.tweet_collect_whole">
-    <configuration name="Hello World" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.HelloWorld">
+    <configuration name="Credentials2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TPredictorDef" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -205,7 +222,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Roch\PycharmProjects\TPredictorDef\TwitterPredictor\HelloWorld.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TwitterPredictor/Credentials2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -299,19 +316,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.Hello World" />
       <item itemvalue="Python.test" />
       <item itemvalue="Python.HelloWorld" />
       <item itemvalue="Python.tweet_collect_whole" />
       <item itemvalue="Python.collect_candidate_actuality_tweets" />
+      <item itemvalue="Python.Credentials2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.HelloWorld" />
+        <item itemvalue="Python.Credentials2" />
         <item itemvalue="Python.tweet_collect_whole" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.HelloWorld" />
         <item itemvalue="Python.collect_candidate_actuality_tweets" />
-        <item itemvalue="Python.Hello World" />
       </list>
     </recent_temporary>
   </component>
@@ -320,13 +337,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33333334" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33333334" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -358,13 +374,27 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/twitter_collect/twitter_connection_setup.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/twitter_collect/tweet_collect_whole.py">
+    <entry file="file://$PROJECT_DIR$/TwitterPredictor/Credentials.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        <state>
+          <caret lean-forward="true" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TwitterPredictor/Credentials2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/CW/TwitterAnalysis/TPredictorDef/TwitterPredictor/HelloWorld.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="65" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -375,12 +405,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/twitter_collect/collect_candidate_actuality_tweets.py">
+    <entry file="file://$PROJECT_DIR$/twitter_collect/tweet_collect_whole.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        <state relative-caret-position="-84">
+          <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TwitterPredictor/HelloWorld.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="62" column="35" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="35" />
           <folding>
-            <marker date="1542208655478" expanded="true" signature="68:73" ph="..." />
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -396,20 +433,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TwitterPredictor/HelloWorld.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-271">
-          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/twitter_collect/twitter_connection_setup.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/TwitterPredictor/Credentials.py">
+    <entry file="file://$PROJECT_DIR$/twitter_collect/collect_candidate_actuality_tweets.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="200">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+          <folding>
+            <marker date="1542279300383" expanded="true" signature="472:477" ph="..." />
+            <marker date="1542279300383" expanded="true" signature="1027:1028" ph="..." />
+            <marker date="1542279300383" expanded="true" signature="1027:1029" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
