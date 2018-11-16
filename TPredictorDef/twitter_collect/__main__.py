@@ -2,7 +2,7 @@ import tweepy
 
 from Credentials2 import *
 from tweet_collect_whole import*
-from collect_candidate_actuality_tweets import get_retweets_of_candidate
+#from collect_candidate_actuality_tweets import get_retweets_of_candidate
 from tweepy.streaming import StreamListener
 class StdOutListener(StreamListener):
 
@@ -22,7 +22,7 @@ def get_tweets_from_candidates_search_queries(queries, twitter_api):
     try:
         listTweets=[]
         for querie in queries:
-            tweets = twitter_api.search(querie)
+            tweets = twitter_api.search(querie,count=30)
             for tweet in tweets:
                 listTweets.append(tweet.text)
         return listTweets
@@ -45,12 +45,14 @@ def twitter_setup():
     api = tweepy.API(auth)
     return api
 
-def collect_by_streaming(user_id):
+def collect_by_streaming(user,twitter_api):
 
-    connexion = twitter_setup()
+
+    user_id=twitter_api.get_user(user).id
+    print(user_id)
     listener = StdOutListener()
-    stream=tweepy.Stream(auth = connexion.auth, listener=listener)
-    stream.filter(follow=[user_id])
+    stream=tweepy.Stream(auth = twitter_api.auth, listener=listener)
+    stream.filter(follow=[str(user_id)])
 
 
 twitter_api=twitter_setup()
@@ -58,11 +60,14 @@ twitter_api=twitter_setup()
 
 list_queries=get_candidate_queries(1, 1)  #with the num of the candidate and the path for arriving to its hashtags and its keywords
 
-list_queriestweets=get_tweets_from_candidates_search_queries(list_queries, twitter_api)
+#list_queriestweets=get_tweets_from_candidates_search_queries(list_queries, twitter_api)
 
 #list_retweets=get_retweets_of_candidate(num_candidate)
+#print(list_queriestweets)
 
-user_id=input("Ecris le id du candidate")
+
+
+user=input("Ecris le user of the candidate")
 
 #list_reponses=get_replies_to_candidate(num_candidate)
 
@@ -70,11 +75,11 @@ user_id=input("Ecris le id du candidate")
 
 list_streaming=[]
 
-list_streaming=collect_by_streaming(user_id)
+collect_by_streaming(user,twitter_api)
 
-print(list_queriestweets)
 
-print(list_streaming)
+
+
 
 
 #as we need the id for the streaming function

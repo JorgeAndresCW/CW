@@ -1,3 +1,5 @@
+import tweepy
+from Credentials2 import*
 from tweepy.streaming import StreamListener
 class StdOutListener(StreamListener):
 
@@ -28,6 +30,19 @@ def get_tweets_from_candidates_search_queries(queries, twitter_api):
         print("There is a problem charging twitter")
         return
 
+def twitter_setup():
+    """
+    Utility function to setup the Twitter's API
+    with an access keys provided in a file credentials.py
+    :return: the authentified API
+    """
+    # Authentication and access using keys:
+    auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
+    auth.set_access_token(ACCESS_TOKEN, ACCESS_SECRET)
+
+    # Return API with authentication:
+    api = tweepy.API(auth)
+    return api
 
 # in order to obtain the reponses , we have to fix the in reply to status id (the id of the message) and in reply to user id(the id of the owner of the message)
 def get_retweets_of_candidate(num_candidate):
@@ -57,5 +72,5 @@ def collect_by_streaming(user_id):
     stream.filter(follow=[user_id])
 
 
-
+collect_by_streaming("@AlexandreDubou3")
 

@@ -35,6 +35,7 @@ def collect_by_user(user_id):
     print(len(statuses))
     return statuses
 
+collect_by_user("@AlexandreDubou3")
 
 from tweepy.streaming import StreamListener
 class StdOutListener(StreamListener):
@@ -63,4 +64,4 @@ def collect_by_streaming():
    # stream.replies=all (deprecated
 
 
-collect_by_streaming()
+
