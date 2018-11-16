@@ -15,18 +15,21 @@ def get_candidate_queries(num_candidate, file_path):
             num_keyword=len(infokey)
             listKeywords=[]
             for i in range (num_keyword):
+
                 listKeywords=listKeywords+infokey[i].split(" ")
 
-        with open(r"file_path[1]","r") as hashtags :
+        with open(r"C:\Users\Roch\PycharmProjects\TPredictorDef\CandidateData\hashtag_candidate_n.txt","r") as hashtags :
 
             infohashtags=hashtags.readlines()
-            num_hashtags=len(hashtags)
+            num_hashtags=len(infohashtags)
             listHashtags=[]
             for j in range (num_hashtags):
                 listHashtags=listHashtags+infohashtags[j].split(" ")
 
         listqueries=listKeywords+listHashtags
 
+        for i in range (len(listqueries)):
+            listqueries[i]=listqueries[i].replace("\n","")
         return listqueries
 
 
@@ -36,5 +39,4 @@ def get_candidate_queries(num_candidate, file_path):
         return
         # TO COMPLETE
 
-L = [r"C:\Users\Roch\PycharmProjects\TPredictorDef\CandidateData\keywords_candidate_n.txt", r"C:\Users\Roch\PycharmProjects\TPredictorDef\CandidateData\hashtag_candidate_n.txt"]
-get_candidate_queries(1,L )
+print(get_candidate_queries(1,1))

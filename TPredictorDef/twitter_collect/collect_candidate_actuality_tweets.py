@@ -34,7 +34,7 @@ def get_retweets_of_candidate(num_candidate):
 
 #comme obtenir le nombre du candidate?
     connexion = twitter_setup()
-    tweets = connexion.search("RT",count=200,user_mentions.id=)
+    tweets = connexion.search("RT",count=200)
 #a retweet does not have user_mention, a retweet has retweet=True, retweeted_status.id (id of the message that i am retweeting) (problem: it does not allow me search with this criteria
     for tweet in tweets:
         print(tweet.text)
@@ -55,6 +55,7 @@ def collect_by_streaming(user_id):
     listener = StdOutListener()
     stream=tweepy.Stream(auth = connexion.auth, listener=listener)
     stream.filter(follow=[user_id])
+
 
 
 
